@@ -73,11 +73,12 @@ main() {
 		# Advanced edge case handling: start auto-saving only if this is the
 		# only tmux server. We don't want saved files from more environments to
 		# overwrite each other.
-		if ! another_tmux_server_running; then
+		# hack by chxia for Mulit-Tmux_server
+		#if ! another_tmux_server_running; then
 			# give user a chance to restore previously saved session
 			delay_saving_environment_on_first_plugin_load
 			add_resurrect_save_interpolation
-		fi
+		#fi
 
 		if just_started_tmux_server; then
 			start_auto_restore_in_background
