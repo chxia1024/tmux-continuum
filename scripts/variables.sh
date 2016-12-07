@@ -15,7 +15,7 @@ auto_restore_default="off"
 
 # HACK by chxia
 #auto_restore_halt_file="${HOME}/tmux_no_auto_restore"
-auto_restore_halt_file="/home/admin/chxia/sw/tmux/.tmux_no_auto_restore"
+auto_restore_halt_file="${CHXIA}/sw/tmux/.tmux_no_auto_restore"
 
 # tmux auto start options
 auto_start_option="@continuum-boot"
