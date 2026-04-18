@@ -15,7 +15,7 @@ auto_restore_default="off"
 
 # HACK by chxia
 #auto_restore_halt_file="${HOME}/tmux_no_auto_restore"
-auto_restore_halt_file="${CHXIA}/sw/tmux/.tmux_no_auto_restore"
+auto_restore_halt_file="${HOME}/.tmux_no_auto_restore_$(hostname)"
 
 auto_restore_max_delay_option="@continuum-restore-max-delay"
 auto_restore_max_delay_default="10"
